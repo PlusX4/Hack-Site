@@ -1,7 +1,8 @@
 #!/bin/bash
 clear
-mkdir .h
-cd $HOME/H-Site/.h/
+pkg install python2 -y
+clear
+cd $HOME
 git clone https://github.com/sqlmapproject/sqlmap
 clear
 cd sqlmap
