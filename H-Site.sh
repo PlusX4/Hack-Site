@@ -28,7 +28,7 @@ echo ""
 
 
 
-cd $HOME/H-Site/.h/sqlmap/
+cd $HOME/sqlmap/
 
 echo -e $g
 read -p "[+] Enter The Website ^> " site
