@@ -3,13 +3,15 @@
 #Install
 
 
-git clone https://github.com/promast3rx4/H-Site
+git clone https://github.com/promast3rx4/Hack-Site
+
 cd H-Site
-chmod +x H-Site.sh install.sh
 
+chmod +x install.sh
 
+bash install.sh
 
 
 #Run
 
-bash H-Site.sh
+bash Hack-Site.sh
