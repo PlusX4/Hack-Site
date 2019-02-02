@@ -14,4 +14,5 @@ echo ""
 echo ""
 read -p "Done [ Press Enter ] "
 cd $HOME/Hack-Site
+chmod 777 *.sh
 ls
