@@ -9,5 +9,5 @@ clear
 cd sqlmap/
 chmod +x sqlmap*
 read -p "Done [ Press Enter ] "
-cd $HOME/Hacl-Site
+cd $HOME/Hack-Site
 ls
