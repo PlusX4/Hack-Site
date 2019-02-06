@@ -13,7 +13,9 @@ rm-rif *zip
 
 cd $HOME/Hack-Site/Modules/
 mkdir .sqlmap
-cd .sqlmap
+cd $HOME
+cp sqlmap $HOME/Hack-Site/Modules/.sqlmap
+cd $HOME/Hack-Site/Modules/.sqlmap
 git clone https://github.com/sqlmapproject/sqlmap
 cd sqlmap
 chmod 777 *py
