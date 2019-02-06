@@ -6,7 +6,9 @@ pkg install pip -y
 pkg install pip2 -y
 
 cd Modules
-unzip *.zip
+unzip 1.zip
+unzip 2.zip
+unzip 3.zip
 
 cd $HOME/Hack-Site/Modules/
 mkdir .sqlmap
