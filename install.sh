@@ -9,7 +9,7 @@ cd Modules
 unzip 1.zip
 unzip 2.zip
 unzip 3.zip
-rm -rif *zip 
+rm -rif *zip
 
 cd $HOME/Hack-Site/Modules/
 mkdir .sqlmap
@@ -41,4 +41,5 @@ chmod +x admin-panel.py
 echo -e $r ""
 read -p "Done [ Press Enter ] "
 cd $HOME/Hack-Site
+chmod +x *sh
 ls
