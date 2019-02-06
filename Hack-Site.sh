@@ -234,7 +234,9 @@ fi
 
 if [ $id = 8 ]
 then
-read -p "Enter The Website ^> " Ff
+echo -e $g ""
+read -p "[+] Enter The WebSite ^> " Ff
+echo -e $w ""
 curl http://api.hackertarget.com/nmap/?q=$Ff
 echo -e $r ""
 read -p "Done...Press Enter To Back "
@@ -244,7 +246,9 @@ fi
 
 if [ $id = 9 ]
 then
-read -p "Enter The Website ^> " Uu
+echo -e $g ""
+read -p "[+] Enter The WebSite ^> " Uu
+echo -e $w ""
 nmap -sV -p 443 --script=ssl-heartbleed $Uu
 echo -e $r ""
 read -p "Done...Press Enter To Back "
