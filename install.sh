@@ -9,6 +9,7 @@ cd Modules
 unzip 1.zip
 unzip 2.zip
 unzip 3.zip
+rm-rif *zip 
 
 cd $HOME/Hack-Site/Modules/
 mkdir .sqlmap
