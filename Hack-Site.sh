@@ -32,9 +32,20 @@ echo -e $y "             [8]$w Scanner (Port)"
 echo -e $y "             [9]$w Scanner (Heartbleed SSL) "
 echo ""
 echo -e $y "                [0]$r Exite"
+echo -e $y "                [U]$r Update"
 echo ""
 echo -e $w
 read -p " Enter The Numper )> " id
+
+if [ $id = U ]
+then 
+bash Update.sh
+fi
+
+if [ $id = u ]
+then 
+bash Update.sh
+fi
 
 if [ $id = 1 ]
 then
