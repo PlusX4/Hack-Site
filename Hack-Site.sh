@@ -16,8 +16,8 @@ echo -e $r '''_   _            _              ____  _ _
 |  _  | (_| | (__|   <  |_____|  ___) | | ||  __/
 |_| |_|\__,_|\___|_|\_\         |____/|_|\__\___|'''
 echo ""
-echo -e $g "        The Script By:$w ProMst3r X4 " 
-echo -e $g "        Telegram:$w t.me/ProMast3r_X4"
+echo -e $g "          The Script By:$w Plus-X4 " 
+echo -e $g "        Telegram:$w t.me/PlusX4"
 echo -e $w "-\e[1;31mv2.0\e[1;37m-------------------------------------------"
 echo ""
 echo ""
