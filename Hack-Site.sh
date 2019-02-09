@@ -17,21 +17,22 @@ echo -e $r '''_   _            _              ____  _ _
 |_| |_|\__,_|\___|_|\_\         |____/|_|\__\___|'''
 echo ""
 echo -e $g "          The Script By:$w Plus-X4 " 
-echo -e $g "        Telegram:$w t.me/PlusX4"
-echo -e $w "-\e[1;31mv2.0\e[1;37m-------------------------------------------"
+echo -e $g "         Telegram:$w t.me/PlusX4"
+echo -e $w "-\e[1;31mv2.3\e[1;37m-------------------------------------------"
 echo ""
 echo ""
-echo -e $y "             [1]$w Sql-Injection "
-echo -e $y "             [2]$w Find Admin-Panel"
-echo -e $y "             [3]$w Decoding Hash"
-echo -e $y "             [4]$w Info Website (IP,Country,...)"
-echo -e $y "             [5]$w IP-GeoLocation"
-echo -e $y "             [6]$w Dork (Sql)"
-echo -e $y "             [7]$w Scanner Website"
-echo -e $y "             [8]$w Scanner (Port)"
-echo -e $y "             [9]$w Scanner (Heartbleed SSL) "
+echo -e $y "             [01]$w Sql-Injection "
+echo -e $y "             [02]$w Find Admin-Panel"
+echo -e $y "             [03]$w Decoding Hash"
+echo -e $y "             [04]$w Info Website (IP,Country,...)"
+echo -e $y "             [05]$w IP-GeoLocation"
+echo -e $y "             [06]$w Dork (Sql)"
+echo -e $y "             [07]$w Scanner Website"
+echo -e $y "             [08]$w Scanner (Port)"
+echo -e $y "             [09]$w Scanner (Heartbleed SSL) "
+echo -e $y "             [10]$w Scanner (Sql-Injection) "
 echo ""
-echo -e $y "                [0]$r Exite"
+echo -e $y "                [E]$r Exite"
 echo -e $y "                [U]$r Update"
 echo ""
 echo -e $w
@@ -83,7 +84,6 @@ read -p "Done...Press Enter To Back "
 cd $HOME/Hack-Site/
 bash Hack-Site.sh
 fi
-
 if [ $id = 2 ]
 then
 clear
@@ -216,22 +216,57 @@ echo ""
 echo -e $g ""
 read -p "[+] Enter The WebSite ^> " Tt
 echo -e $r
-read -p "[+] Scanner By angryFuzzer ( Press Enetr) "
-echo -e $w
+echo -e $y
+read -p "[!] Do you Scanner By angryFuzzer (y/n) " a1
+read -p "[!] Do you Scanner By nikto (y/n) " a2
+read -p "[!] Do you Scanner By dirsearch (y/n) " a3
+read -p "[!] Do You Scanner By gasmask (y/n) " a4
+echo
+echo
+echo
+if [ $a1 = y ]
+then
+echo -e $y "[!] Start Scanner By angryFuzzer..."
+sleep 5
 cd $HOME/Hack-Site/Modules/.angryFuzzer
 python2 angryFuzzer.py -u $Tt
-echo -e $r
-read -p "[+] Scanner By Nikto ( Press Enetr) "
-echo -e $w
+echo -e $w ""
+read -p "Done...Press Enter "
+fi
+if [ $a2 = y ]
+then
+echo -e $w ""
+echo -e $y "[!] Start Scanner By Nikto..."
+sleep 5
 cd $HOME/Hack-Site/Modules/.nikto/program
 perl nikto.pl -h $Tt
+echo -e $w ""
 echo -e $r ""
-read -p "Done...Press Enter For Back "
-cd $HOME/Hack-Site/
+read -p "Done...Press Enter "
+fi
+if [ $a3 = y ]
+then
+echo -e $w ""
+echo -e $y "[!] Start Scanner By Dirsearch..."
+sleep 5
+cd $HOME/Hack-Site/Modules/.dirsearch 
+python3 dirsearch.py -u $Tt
+echo -e $w ""
+read -p "Done...Press Enter "
+fi
+if [ $a4 = y ]
+then 
+echo -e $w ""
+echo -e $y "[!] Start Scanner By Gasmask..."
+sleep 5
+cd $HOME/Hack-Site/Modules/.gasmask
+python2 gasmask.py -d $Tt
+echo -e $w ""
+read -p "Done...Press Enter "
+fi
+cd $HOME/Hack-Site
 bash Hack-Site.sh
 fi
-
-
 if [ $id = 8 ]
 then
 echo -e $g ""
@@ -256,7 +291,19 @@ cd $HOME/Hack-Site/
 bash Hack-Site.sh
 fi
 
-if [ $id = 0 ]
+if [ $id = 10 ]
+cd $HOME/Hack-Site/Modules/.slq
+php sql.php
+fi
+
+if [ $id = e ]
+then
+echo ""
+echo -e $r "            Good Bye........"
+echo -e $w
+fi
+
+if [ $id = E ]
 then
 echo ""
 echo -e $r "            Good Bye........"

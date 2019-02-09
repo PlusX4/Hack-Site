@@ -9,6 +9,7 @@ cd Modules
 unzip 1.zip
 unzip 2.zip
 unzip 3.zip
+unzip 4.zip
 rm -rif *zip
 
 cd $HOME/Hack-Site/Modules/
@@ -37,6 +38,14 @@ chmod +x hash.py
 
 cd $HOME/Hack-Site/Modules/.admin-panel
 chmod +x admin-panel.py
+
+
+cd $HOME/Hack-Site/Modules/.sql
+chmod +x *php
+
+
+cd $HOME/Hack-Site/Modules/.gasmask
+pip2 install -r requirements.txt
 
 echo -e $r ""
 read -p "Done [ Press Enter ] "
