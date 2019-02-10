@@ -279,7 +279,7 @@ cd $HOME/Hack-Site/
 bash Hack-Site.sh
 fi
 
-if [ $id = 10 ]
+if [ $id = 9 ]
 then
 echo -e $g ""
 read -p "[+] Enter The WebSite ^> " Uu
@@ -291,7 +291,7 @@ cd $HOME/Hack-Site/
 bash Hack-Site.sh
 fi
 
-if [ $id = 9 ]
+if [ $id = 10 ]
 then
 cd /data/data/com.termux/files/home/Hack-Site/Modules/.sql
 php sql.php
